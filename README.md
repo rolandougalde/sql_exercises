@@ -2,7 +2,7 @@
 
 **Index**
 
-01 to 05 - Exercises
+[01 to 05 - Exercises](https://github.com/rolandougalde/sql_exercises/code/exercices_1-5.sql)
 06 to 10 - Exercises
 
 ## Presenting... MS SQL Challenges - 2st Edition
