@@ -22,7 +22,18 @@ GROUP BY YEAR(O.OrderDate)
 ORDER BY 1
 
 --16. Show the number of unique customers who bought each product category.
---The example uses a Pivot Table added to the model.
+SELECT 
+    c.CategoryName,
+    COUNT(DISTINCT o.CustomerID) AS UniqueCustomers
+FROM Categories c
+JOIN Products p 
+    ON c.CategoryID = p.CategoryID
+JOIN [Order Details] od 
+    ON p.ProductID = od.ProductID
+JOIN Orders o 
+    ON od.OrderID = o.OrderID
+GROUP BY c.CategoryName
+ORDER BY UniqueCustomers DESC;
 
 --17. Show the total number of orders and the total amount for each of them.
 
