@@ -15,7 +15,7 @@
 - [Part 2 - 06 to 09 - Exercises](https://github.com/rolandougalde/sql_exercises/blob/main/code/2nd_part_6-9.sql)
 - [Part 2 - 10 to 13 - Exercises](https://github.com/rolandougalde/sql_exercises/blob/main/code/2nd_part_10-13.sql)
 - [Part 2 - 14 to 17 - Exercises](https://github.com/rolandougalde/sql_exercises/blob/main/code/2nd_part_14-17.sql)
-- [Part 2 - 18 to 20 - Exercises](https://github.com/rolandougalde/sql_exercises/blob/main/code/2nd_part_10-20.sql)
+- [Part 2 - 18 to 20 - Exercises](https://github.com/rolandougalde/sql_exercises/blob/main/code/2nd_part_18-20.sql)
 
 ## Classic Practice Course
 Welcome to TRANSACT-SQL Basics, a hands-on tutorial built around a timeless practice database. 
