@@ -25,6 +25,22 @@ GROUP BY C.CustomerID, C.CompanyName
 HAVING SUM(OD.Unitprice * OD.Quantity) > 5000
 ORDER BY 3 DESC
 
+-- Solved with CTE
+WITH Import AS
+(
+SELECT
+	C.CustomerID,
+	C.CompanyName,
+    SUM(OD.UnitPrice * OD.Quantity) AS [Total]	
+FROM Customers C
+INNER JOIN Orders O ON O.CustomerID = C.CustomerID
+INNER JOIN [Order Details] OD ON OD.OrderID = O.OrderID
+GROUP BY C.CustomerID, C.CompanyName
+-- HAVING SUM(OD.Unitprice * OD.Quantity) > 5000
+-- ORDER BY 3 DESC
+)
+SELECT * FROM Import
+
 --20. Show the purchases of customers in March of 1996, 1997, and 1998.
 
 END
